@@ -364,7 +364,7 @@ h2.steps__title {
 .steps__card-thumb {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: c;
 }
 
 .steps__card-title {
@@ -405,31 +405,51 @@ h2.steps__title {
 
 /* destinations styles start */
 
+.arrows {
+    position: relative;
+    width: 1400px;
+}
+.arrow {
+    cursor: pointer;
+}
+.arrow-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 .destinations__title {
     margin-bottom: 45px;
     margin-top: 0;
 }
+.destinations__gallery{
+   margin: auto;   
+   overflow: hidden;
+  margin-bottom: 15px;
+}
 
 .gallery__list {
+    width: 9999px;
     position: relative;
     display: flex;
     padding: 0;
     margin-bottom: 10px;
 }
-
-img {
-    max-width: none;
+.gallery__list li {
+    display: inline-block; 
 }
-
-.gallery__item {
-    position: relative;
-    left: -540px;
+.gallery__list img {
+    display: block; /* убираем пустое место вокруг картинок */
+}
+.gallery__img{
+    object-fit: cover;
+    border-radius: 16px;
+    width: 1422px;
+    height: 600px;
 }
 
 .gallery__block {
     position: relative;
 }
-
 
 .gallery__subtitle {
     position: absolute;
@@ -446,9 +466,6 @@ img {
     display: none;
 }
 
-.item-to-move {
-    margin-left: 60px;
-}
 
 .slider__control-mobile {
     display: none;
@@ -558,9 +575,11 @@ img {
 .stories__card-thumb {
     width: 400px;
     height: 244px;
+    object-fit: cover;
     border-radius: 16px;
     filter: drop-shadow(0px 4px 4px #6f440d);
 }
+
 
 
 .more__link {
@@ -572,6 +591,7 @@ img {
     text-decoration: underline;
     position: relative;
     top: -19px;
+    cursor: pointer;
 }
 
 .stories__button {
@@ -922,7 +942,7 @@ img {
     }
     .arrow {
         position: absolute;
-        top: 78px;
+;
     }
     .arrow-left {
         left: 13px;

@@ -179,6 +179,9 @@
     </section>
     <!-- steps end -->
 
+
+
+    
     <!-- destinations start -->
     <section class="destinations" id="destinations">
       <h2 class="section__title destinations__title">
@@ -186,34 +189,27 @@
       </h2>
       <div class="destinations__slider" id="destinations__slider">
         <div class="destinations__gallery">
+          <div class="arrows">
+          <div class="arrow-left">
+            <img class="arrow" src="img/arrow-left.svg" alt="arrow">
+          </div>
+          <div class="arrow-right">
+            <img class="arrow" src="img/arrow-right.svg" alt="arrow">
+          </div>
+        </div>
           <ul class="gallery__list">
             <li class="gallery__item">
               <a href="#" class="destinations-link">
                 <div class="gallery__block">
-                  <img class="gallery__img" src="img/gallery-photo1.jpg" width="800" height="800" alt="USA">
+                  <img class="gallery__img" src="img/gallery-photo1.jpg"  alt="USA">
                   <h4 class="gallery__subtitle">SPAIN</h4>
-                  <div class="slider__control-mobile">
-                    <ul class="slider__control-list">
-                      <li class="slider__control-item slider__control-active"></li>
-                      <li class="slider__control-item"></li>
-                      <li class="slider__control-item"></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="slider__mobile">
-                  <span class="arrow arrow-left">
-                    <img src="img/arrow-left.svg" alt="arrow">
-                  </span>
-                  <span class="arrow arrow-right">
-                    <img src="img/arrow-right.svg" alt="arrow">
-                  </span>                
                 </div>
               </a>
             </li>
             <li class="gallery__item item-to-move mobile-hide">
               <a href="#" class="destinations-link">
                 <div class="gallery__block">
-                  <img src="img/gallery-photo3.jpg" width="800" height="800" alt="JAPAN">
+                  <img class="gallery__img" src="img/gallery-photo3.jpg"  alt="JAPAN">
                   <h4 class="gallery__subtitle">JAPAN</h4>
                 </div>
               </a>
@@ -221,20 +217,13 @@
             <li class="gallery__item item-to-move item-to-hide mobile-hide">
               <a href="#" class="destinations-link">
                 <div class="gallery__block">
-                  <img src="img/gallery-photo2.jpg" width="800" height="800" alt="USA">
+                  <img class="gallery__img" src="img/gallery-photo2.jpg" alt="USA">
                   <h4 class="gallery__subtitle">USA</h4>
                 </div>
               </a>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="slider__control-desktop">
-        <ul class="slider__control-list">
-          <li class="slider__control-item"></li>
-          <li class="slider__control-item slider__control-active"></li>
-          <li class="slider__control-item"></li>
-        </ul>
       </div>
       <div class="destinations__button">
         <form class="destinations__form" action="#">
@@ -283,7 +272,9 @@
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <a class="more__link">
                   Read More
@@ -309,7 +300,9 @@
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <a class="more__link">
                   Read More
@@ -335,7 +328,9 @@
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <a class="more__link">
                   Read More
@@ -361,7 +356,9 @@
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <a class="more__link">
                   Read More
@@ -419,26 +416,15 @@
     </div>
   </footer>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+<script>
 
-  <!-- hide text -->
-  <!-- <script>
-    $(document).ready(function () {
+</script>
+<script src="js/slider.js"></script>
+  <script src="js/burger.js"></script>
+    <script src="js/text-extension.js"></script>
+  <!-- <script src="js/test-text-extension.js"></script> -->
+  <!-- <script src="js/test.js"></script> -->
 
-      $('.more__link').click(function () {
-        $('.stories__card-text').toggleClass('opener');
-        if (!$(this).data('status')) {
-          $(this).data('status', true).html('Close');
-        } else {
-          $(this).data('status', false).html('Read More');
-        }
-      });
-
-    });
-  </script> -->
-
-
-  <script src="js/index.js"></script>
 </body>
 
 </html>
